@@ -57,14 +57,6 @@ function Footer() {
         <span style={{ fontSize: "0.72rem", color: "rgba(250,250,247,0.25)" }}>
           © 2025 Serena Spa · Santiago, Chile
         </span>
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <span style={{ fontSize: "0.72rem", color: "rgba(250,250,247,0.25)" }}>ODS</span>
-          <div style={{
-            width: "28px", height: "28px", background: "#4CAF50", color: "#fff",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "0.6rem", fontWeight: 700, borderRadius: "3px"
-          }}>3</div>
-        </div>
       </div>
     </footer>
   )
