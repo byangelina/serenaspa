@@ -8,7 +8,7 @@ const SLIDES = [
     texto: "Masajes, manicura, peluquería y tratamientos faciales en un espacio creado para tu descanso, tu confianza y tu salud emocional.",
     btn1: { texto: "Reservar hora", href: "#contacto" },
     btn2: { texto: "Ver servicios", href: "#servicios" },
-    imagen: "img/hero1.jpg"
+    imagen: "img/hero1.png"
   },
   {
     eyebrow: "Salud emocional",
@@ -16,7 +16,7 @@ const SLIDES = [
     texto: "Más que un spa: un espacio de contención y escucha. Acompañamos tu bienestar psicológico con un trato cálido, humano y sin juicios.",
     btn1: { texto: "Conoce nuestra misión", href: "#nosotras" },
     btn2: { texto: "Ver servicios", href: "#servicios" },
-    imagen: "img/hero2.jpg"
+    imagen: "img/hero2.png"
   },
   {
     eyebrow: "Test gratuito",
@@ -24,7 +24,7 @@ const SLIDES = [
     texto: "Agenda una evaluación gratuita de bienestar emocional con nuestras profesionales. Sin costo, sin compromiso: solo un primer paso para cuidarte.",
     btn1: { texto: "Solicitar test gratis", href: "#contacto" },
     btn2: { texto: "Más información", href: "#faq" },
-    imagen: "img/hero3.jpg"
+    imagen: "img/hero3.png"
   }
 ]
 
@@ -37,7 +37,6 @@ function Hero() {
     const intervalo = setInterval(() => {
       setSlideActual(prev => (prev + 1) % SLIDES.length)
     }, 6000)
-    // Limpieza del intervalo al desmontar
     return () => clearInterval(intervalo)
   }, [])
 
@@ -110,22 +109,6 @@ function Hero() {
           }}>
             {slide.btn2.texto}
           </a>
-        </div>
-
-        {/* Badge ODS 3 */}
-        <div style={{
-          marginTop: "3rem", display: "inline-flex", alignItems: "center", gap: "0.8rem",
-          padding: "0.7rem 1.4rem", background: "rgba(61,90,71,0.08)",
-          border: "1px solid rgba(61,90,71,0.15)",
-          fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase",
-          color: "var(--verde-osc)"
-        }}>
-          <div style={{
-            width: "26px", height: "26px", background: "#4CAF50", color: "#fff",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "0.65rem", fontWeight: 700, borderRadius: "3px"
-          }}>3</div>
-          Comprometidas con el ODS 3 · Salud y Bienestar
         </div>
       </div>
 
