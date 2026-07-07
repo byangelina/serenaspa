@@ -8,7 +8,7 @@ const SLIDES = [
     texto: "Masajes, manicura, peluquería y tratamientos faciales en un espacio creado para tu descanso, tu confianza y tu salud emocional.",
     btn1: { texto: "Reservar hora", href: "#contacto" },
     btn2: { texto: "Ver servicios", href: "#servicios" },
-    imagen: "img/hero1.png"
+    imagen: "img/hero1.jpg"
   },
   {
     eyebrow: "Salud emocional",
@@ -16,7 +16,7 @@ const SLIDES = [
     texto: "Más que un spa: un espacio de contención y escucha. Acompañamos tu bienestar psicológico con un trato cálido, humano y sin juicios.",
     btn1: { texto: "Conoce nuestra misión", href: "#nosotras" },
     btn2: { texto: "Ver servicios", href: "#servicios" },
-    imagen: "img/hero2.png"
+    imagen: "img/hero2.jpg"
   },
   {
     eyebrow: "Test gratuito",
@@ -24,7 +24,7 @@ const SLIDES = [
     texto: "Agenda una evaluación gratuita de bienestar emocional con nuestras profesionales. Sin costo, sin compromiso: solo un primer paso para cuidarte.",
     btn1: { texto: "Solicitar test gratis", href: "#contacto" },
     btn2: { texto: "Más información", href: "#faq" },
-    imagen: "img/hero3.png"
+    imagen: "img/hero3.jpg"
   }
 ]
 
