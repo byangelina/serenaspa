@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-// Datos de las 6 imágenes de galería
+// Datos de las 6 imágenes de galería (sin emojis, con extensión .png)
 const ITEMS = [
-  { imagen: "img/gal-masajes.jpg",  label: "Sala de masajes",       grande: true  },
-  { imagen: "img/gal-faciales.jpg", label: "Tratamientos faciales", grande: false },
-  { imagen: "img/gal-manicura.jpg", label: "Manicura",              grande: false },
-  { imagen: "img/gal-peluqueria.jpg",label: "Peluquería",           grande: false },
-  { imagen: "img/gal-ambiente.jpg", label: "Ambiente Serena",       grande: false },
-  { imagen: "img/gal-rituales.jpg", label: "Rituales",              grande: false }
+  { imagen: "img/gal-masajes.png",   label: "Sala de masajes",       grande: true  },
+  { imagen: "img/gal-faciales.png",  label: "Tratamientos faciales", grande: false },
+  { imagen: "img/gal-manicura.png",  label: "Manicura",              grande: false },
+  { imagen: "img/gal-peluqueria.png",label: "Peluquería",            grande: false },
+  { imagen: "img/gal-ambiente.png",  label: "Ambiente Serena",       grande: false },
+  { imagen: "img/gal-rituales.png",  label: "Rituales",              grande: false }
 ]
 
 // Componente reutilizable para cada celda de galería
