@@ -1,14 +1,14 @@
-// Datos de los diferenciadores del spa
+// Diferenciadores del spa (sin iconos, tal como está en tu versión actual)
 const DIFERENCIADORES = [
-  { icono: "🫶", texto: "Atención dedicada, solo para ti" },
-  { icono: "🌱", texto: "Productos naturales y certificados" },
-  { icono: "🧘‍♀️", texto: "Ambiente de terapia emocional" },
-  { icono: "💬", texto: "Escucha activa y sin juicios" },
-  { icono: "⏱️", texto: "Tu tiempo, respetado siempre" }
+  "Atención dedicada, solo para ti",
+  "Productos naturales y certificados",
+  "Ambiente de terapia emocional",
+  "Escucha activa y sin juicios",
+  "Tu tiempo, respetado siempre"
 ]
 
 // Componente reutilizable para cada ítem diferenciador
-function DifItem({ icono, texto }) {
+function DifItem({ texto }) {
   return (
     <div style={{
       display: "flex", alignItems: "center", gap: "1rem",
@@ -16,7 +16,6 @@ function DifItem({ icono, texto }) {
       background: "rgba(250,250,247,0.06)",
       border: "1px solid rgba(250,250,247,0.1)"
     }}>
-      <span style={{ fontSize: "1.3rem", flexShrink: 0 }}>{icono}</span>
       <p style={{ fontSize: "0.85rem", fontWeight: 300, color: "rgba(250,250,247,0.85)" }}>
         {texto}
       </p>
@@ -68,14 +67,14 @@ function Nosotras() {
           color: "rgba(143,175,140,0.9)", lineHeight: 1.7
         }}>
           Alineadas con el ODS 3: Salud y Bienestar, integramos el bienestar emocional como
-          parte del servicio, no como un extra.
+          parte del servicio.
         </p>
       </div>
 
       {/* Lista de diferenciadores */}
       <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
         {DIFERENCIADORES.map((d, i) => (
-          <DifItem key={i} icono={d.icono} texto={d.texto} />
+          <DifItem key={i} texto={d} />
         ))}
       </div>
     </section>
