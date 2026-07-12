@@ -9,6 +9,7 @@ import Galeria  from "./components/Galeria.jsx"
 import FAQ      from "./components/FAQ.jsx"
 import Contacto from "./components/Contacto.jsx"
 import Footer   from "./components/Footer.jsx"
+import Sucursales from "./components/Sucursales.jsx"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Nosotras />
       <Galeria />
+      <Sucursales />
       <FAQ />
       <Contacto />
       <Footer />
